@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KAAYI RP</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:url('background.jpg') no-repeat center/cover;
+color:white;
+}
+
+/* navbar */
+.nav{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:black;
+}
+
+.nav img{
+height:40px;
+}
+
+/* center content */
+.center{
+text-align:center;
+margin-top:150px;
+}
+
+h1{
+font-size:60px;
+}
+
+span{
+color:yellow;
+}
+
+/* buttons */
+button{
+padding:15px 25px;
+margin:10px;
+border:none;
+cursor:pointer;
+font-weight:bold;
+}
+
+.connect{
+background:yellow;
+color:black;
+}
+
+.discord{
+background:black;
+color:yellow;
+border:1px solid yellow;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="nav">
+<img src="logo.png">
+<div>
+<a style="color:white;margin:10px;">Home</a>
+<a style="color:white;margin:10px;">Rules</a>
+</div>
+</div>
+
+<div class="center">
+<h1>KAAYI <span>CITY</span></h1>
+<p>Best FiveM Roleplay Server</p>
+
+<button class="connect" onclick="connect()">Connect</button>
+<button class="discord" onclick="discord()">Discord</button>
+</div>
+
+<script>
+function connect(){
+window.location.href="fivem://connect/YOUR_IP:PORT";
+}
+
+function discord(){
+window.open("https://discord.gg/YOURCODE");
+}
+</script>
+
+</body>
+</html>
